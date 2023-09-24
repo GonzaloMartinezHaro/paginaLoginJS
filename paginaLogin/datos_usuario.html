@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos del Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Datos del Usuario</h1>
+        <form>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div>
+                <label for="primer-apellido">Primer Apellido:</label>
+                <input type="text" id="primer-apellido" required>
+            </div>
+            <div>
+                <label for="segundo-apellido">Segundo Apellido:</label>
+                <input type="text" id="segundo-apellido" required>
+            </div>
+            <div>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" required>
+            </div>
+            <div>
+                <label for="fecha-nacimiento">Fecha de Nacimiento (dd/mm/AAAA):</label>
+                <input type="text" id="fecha-nacimiento" required>
+            </div>
+            <button type="button" onclick="guardarDatos()">Guardar</button>
+            <button type="button" onclick="limpiarCampos()">Limpiar</button>
+        </form>
+        <p id="error-message"></p>
+        <p id="correcto"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
